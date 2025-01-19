@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '@/views/HomeView.vue'
 import GamesTabView from '@/views/GamesTabView.vue'
+import GameDetailView from '@/views/GameDetailView.vue'
 import NotFoundView from '@/views/NotFoundView.vue'
 import { TabType } from '@/types'
 
@@ -18,6 +19,12 @@ const router = createRouter({
       path: `/tab/:tabType(${tabTypeValues})`,
       name: 'GamesTab',
       component: GamesTabView,
+      props: true,
+    },
+    {
+      path: '/game/:id',
+      name: 'GameDetail',
+      component: GameDetailView,
       props: true,
     },
     {
