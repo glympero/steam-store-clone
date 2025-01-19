@@ -44,6 +44,7 @@ function toggleMenu() {
 }
 
 .burger {
+  display: none;
   background: none;
   border: none;
   font-size: 1.5rem;
@@ -66,6 +67,7 @@ function toggleMenu() {
 .nav-item.router-link-active {
   color: var(--vt-c-white);
 }
+
 .nav-item.router-link-active::after {
   content: '';
   position: absolute;
